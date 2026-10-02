@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reach out — scalescience.ai</title>
+<meta name="description" content="The Science of Scaling. Growth engineered, not guessed — growth engine design, data science and product-market fit for founders and CXOs.">
+<meta property="og:title" content="Reach out — scalescience.ai">
+<meta property="og:description" content="The Science of Scaling. Growth engineered, not guessed — growth engine design, data science and product-market fit for founders and CXOs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230E0E0E'/%3E%3Crect x='5' y='5' width='6' height='6' fill='%232647D9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F7F5}
+a{color:#0E0E0E}a:hover{color:#4F4F4C}
+</style>
+<style>a:focus-visible,input:focus-visible{outline:2px solid #2647D9;outline-offset:3px}html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #F7F7F5; color: #0E0E0E; font-family: 'Geist', 'Helvetica Neue', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap">
+<a href="/" style="text-decoration: none; font-weight: 600; letter-spacing: -0.02em; font-size: 18px">scalescience<span style="color: #2647D9">.ai</span></a>
+<a href="/" style="font-size: 15px; color: #4F4F4C; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center">← Back to home</a>
+</header>
+<section style="max-width: 720px; margin: 0 auto; padding: 100px 24px 140px; display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #4F4F4C">Reach out</div>
+<h1 style="margin: 0; font-size: clamp(44px, 6vw, 76px); line-height: 1; letter-spacing: -0.04em; font-weight: 500">Before you write.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.45; color: #4F4F4C">We read every note and reply to the ones that fit. Confirm two things, and we will show you where to write.</p>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #0E0E0E; margin-top: 12px">
+<label style="display: flex; gap: 16px; align-items: flex-start; padding: 22px 0; border-bottom: 1px solid #D9D9D4; cursor: pointer; font-size: 18px; line-height: 1.45">
+<input type="checkbox" id="c1" class="gate" style="width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0E0E0E; flex-shrink: 0">
+<span>I own, or can make the call on, both product-market fit and growth, end to end.</span>
+</label>
+<label style="display: flex; gap: 16px; align-items: flex-start; padding: 22px 0; border-bottom: 1px solid #D9D9D4; cursor: pointer; font-size: 18px; line-height: 1.45">
+<input type="checkbox" id="c2" class="gate" style="width: 22px; height: 22px; margin: 2px 0 0; accent-color: #0E0E0E; flex-shrink: 0">
+<span>I am willing to seek the truth, even when it is uncomfortable, and to iterate fast.</span>
+</label>
+</div>
+<div id="ready" hidden>
+<div style="display: flex; flex-direction: column; gap: 14px; background: #0E0E0E; color: #F7F7F5; padding: 36px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9A9A3">Write to us</span>
+<a href="mailto:growth@scalescience.ai" style="color: #F7F7F5; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.015em; text-underline-offset: 6px; min-height: 44px; display: inline-flex; align-items: center">growth@scalescience.ai</a>
+<span style="color: #A9A9A3; font-size: 16px">Tell us what you are building, where growth is stuck, and which idea on this site you disagreed with most.</span>
+</div>
+</div>
+<div id="notready">
+<p style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #4F4F4C">Confirm both to continue.</p>
+</div>
+</section>
+<footer style="border-top: 1px solid #D9D9D4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #4F4F4C">
+<span>© 2026 scalescience.ai</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px">Engineered, not guessed</span>
+</div>
+</footer>
+</div>
+<script>
+var boxes=document.querySelectorAll('.gate');
+function upd(){var ok=Array.prototype.every.call(boxes,function(b){return b.checked});
+document.getElementById('ready').hidden=!ok;document.getElementById('notready').hidden=ok;}
+boxes.forEach(function(b){b.addEventListener('change',upd)});upd();
+</script>
+</body>
+</html>
